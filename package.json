@@ -1,0 +1,29 @@
+{
+  "name": "payroll-system",
+  "version": "1.0.0",
+  "description": "Payroll System with deductions, payslips, and reports",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "You",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "build": {
+    "appId": "com.payroll.system",
+    "productName": "Pasahod sa Trabahador",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
